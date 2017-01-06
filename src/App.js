@@ -5,9 +5,10 @@ import Miss from 'react-router/Miss';
 
 import logo from './logo.svg';
 import './App.css';
-import HomePage from './components/layout/HomePage';
-import SupportPage from './components/layout/SupportPage';
-import NotFoundPage from './components/layout/NotFoundPage';
+import Header from './components/common/Header';
+import HomePage from './components/page/HomePage';
+import SupportPage from './components/page/SupportPage';
+import NotFoundPage from './components/page/NotFoundPage';
 
 class App extends Component {
   render() {
