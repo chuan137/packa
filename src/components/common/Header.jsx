@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
+import Button from 'react-bootstrap/lib/Button';
 import logo from '../../logo.svg';
 
 const styles = {
@@ -21,7 +22,7 @@ const styles = {
 class Header extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect style={styles.header}>
+      <Navbar staticTop collapseOnSelect style={styles.header}>
         <Navbar.Header>
           <Navbar.Brand>
             <a>
@@ -46,8 +47,12 @@ class Header extends Component {
             </NavDropdown>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link Right</NavItem>
-            <NavItem eventKey={2} href="#">Link Right</NavItem>
+            <li className="navbar-btn ms-padding">
+              <Button>登录</Button> 
+            </li>
+            <li className="navbar-btn ms-padding-last">
+              <Button bsStyle="success">注册</Button>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
