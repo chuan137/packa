@@ -4,21 +4,32 @@ import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
-//import logo from '../../logo.svg';
-//import {Nav, Natem, NavDropdown, MenuItem} from 'react-bootstrap';
+import logo from '../../logo.svg';
 
-const headerStyle={
-  paddingTop: '15px',
-  paddingBottom: '15px'
+const styles = {
+  header: {
+    paddingTop: '15px',
+    paddingBottom: '15px'
+  },
+  logo: {
+    width: "60px",
+    marginRight: "-20px",
+    marginTop: "-12px"
+  }
 };
 
 class Header extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect style={headerStyle}>
+      <Navbar collapseOnSelect style={styles.header}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">React-Bootstrap</a>
+            <a>
+              <img src={logo} alt="logo" style={styles.logo} />
+            </a>
+          </Navbar.Brand>
+          <Navbar.Brand>
+            <a>新裹吧</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
