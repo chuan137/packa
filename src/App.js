@@ -15,10 +15,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header/>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
-
+         
           <div>
             <Match exactly pattern="/" component={HomePage} />
             <Match pattern="/support" component={SupportPage} />

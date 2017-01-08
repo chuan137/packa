@@ -23,9 +23,9 @@
   to { transform: rotate(360deg); }
 }
 
-.ms-padding {
-  padding: 0 5px;
+.sm-padding {
+  padding: 0 2px;
 }
-.ms-padding-last {
-  padding: 0 0 0 5px;
+.sm-padding-last {
+  padding: 0 0 0 2px;
 }
