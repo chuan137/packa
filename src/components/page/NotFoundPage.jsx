@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import CenterContent from '../ui/CenterContent';
 
 class NotFoundPage extends Component {
   render() {
     return (
       <div>
-        Not Found
+        <CenterContent>
+          Not Found
+        </CenterContent>
       </div>
     );
   }

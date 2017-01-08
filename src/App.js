@@ -6,6 +6,7 @@ import Miss from 'react-router/Miss';
 import './App.css';
 import Header from './components/common/Header';
 import HomePage from './components/page/HomePage';
+import LoginPage from './components/page/LoginPage';
 import SupportPage from './components/page/SupportPage';
 import NotFoundPage from './components/page/NotFoundPage';
 
@@ -18,6 +19,7 @@ class App extends Component {
          
           <div>
             <Match exactly pattern="/" component={HomePage} />
+            <Match pattern="/login" component={LoginPage} />
             <Match pattern="/support" component={SupportPage} />
             <Miss component={NotFoundPage} />
           </div>
